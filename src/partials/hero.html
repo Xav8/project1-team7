@@ -1,38 +1,208 @@
-<!-- Header Section -->
-<header class="header">
-    <div class="container">
-    <nav class="nav-menu">
-        <a href class="logo">
-            <img src="./images/logo-D1-min.png">
-        </a>
-    <ul>
-        <li>
-            <a href="-" class="menu-link">Home</a>
+<header class="header" id="home">
+  <div class="container-center header__container">
+    <a class="logo link" href="#hero"
+      ><svg class="logo__icon" width="199" height="50">
+        <use href="/src/images/logo.svg"></use>
+      </svg>
+    </a>
+    <button
+      class="menu-button menu-button--on js-open-menu"
+      type="button"
+      aria-label="mobile menu toggle button"
+      aria-expanded="false"
+    >
+      <svg class="menu-button__icon" width="20" height="12">
+        <use href="/src/images/burger-button.svg"></use>
+      </svg>
+    </button>
+    <div class="menu-wrap js-menu-container">
+      <button
+        class="menu-button menu-button--off js-close-menu"
+        type="button"
+        aria-label="mobile menu toggle button"
+        aria-expanded="false"
+      >
+        <svg class="menu-button__icon" width="14" height="14">
+          <use href="/src/images/close-button.svg"></use>
+        </svg>
+      </button>
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a href="" class="nav-list__link link">Home</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="" class="nav-list__link link">About us</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="" class="nav-list__link link">How it’s made?</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="" class="nav-list__link link">Our products</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="" class="nav-list__link link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="header-button menu-wrap__button button"
+        type="button"
+        data-modal-open
+      >
+        Buy now
+        <svg class="header-button__icon" width="8" height="10">
+          <use href="/src/images/buy-now-arrow.svg"></use>
+        </svg>
+      </button>
+    </div>
+    <button
+      class="header-button header-button--main button"
+      type="button"
+      data-modal-open
+    >
+      Buy now
+      <svg class="header-button__icon" width="8" height="10">
+        <use href="/src/images/buy-now-arrow.svg"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="hero">
+  <div class="container-center hero__space">
+    <div class="hero__flex">
+      <h1 class="hero__caption">
+        ice cream made with
+        <span class="hero__caption--pink">passion</span>
+      </h1>
+      <ul class="hero-cafes">
+        <li class="hero-cafes__item">
+          <img
+            class="hero__ellipse"
+            src="/src/images/hero-ellipse.svg"
+            alt=""
+          />
+          <span class="hero-cafes__number">16</span>
+          <p class="hero-cafes__text">cafes</p>
         </li>
-        <li>
-            <a href="-" class="menu-link">About us</a>
+        <li class="hero-cafes__item">
+          <img
+            class="hero__ellipse"
+            src="/src/images/hero-ellipse.svg"
+            alt=""
+          />
+          <span class="hero-cafes__number">23</span>
+          <p class="hero-cafes__text">food trucks</p>
         </li>
-        <li>
-            <a href="-" class="menu-link">How it's made?</a>
-        </li>
-        <li>
-            <a href="-" class="menu-link">Our products</a>
-        </li>
-        <li>
-            <a href="-" class="menu-link">Contact</a>
-        </li>
+      </ul>
+    </div>
+    <ul class="hero__list">
+      <li class="hero__item">
+        <a href="" class="hero__btn hero__btn--pink">Products</a>
+      </li>
+      <li class="hero__item">
+        <a href="" class="hero__btn hero__btn--white">How it’s made?</a>
+      </li>
     </ul>
-    </nav>
-    <button class="header-btn">Buy now</button>
-</div>
-<!-- Hero Section -->
-<div class="hero-info">
-    <h1 class="hero-info__title">ice cream made with passion</h1>
-</div>
-<div class="hero-info__btns">
-    <button>Products</button>
-    <button>How it's made?</button>
-</div>
-<div class="hero-info__text">
-    Indulge in a scoop of ice cream made with passion and treat your taste buds to an unforgettable experience!
-</div>
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          /src/images/milk-T1-min.png 1x,
+          /src/images/milk-T2-min.png 2x,
+          /src/images/milk-T3-min.png 3x
+        "
+        type=""
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /src/images/milk-T1-min.png 1x,
+          /src/images/milk-T2-min.png 2x,
+          /src/images/milk-T3-min.png 3x
+        "
+        type=""
+      />
+      <img
+        class="hero__milk"
+        src="/src/images/milk-T1-min.png"
+        alt="icecream woman"
+        width="213"
+        height="216"
+      />
+    </picture>
+    <div class="hero__note">
+      <p class="hero__text">
+        Indulge in a scoop of ice cream made with passion and treat your taste
+        buds to an unforgettable experience!
+      </p>
+      <button class="hero__btn--arrow" type="button"></button>
+    </div>
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          /src/images/ice-M1-min.png 1x,
+          /src/images/ice-M2-min.png 2x,
+          /src/images/ice-M3-min.png 3x
+        "
+        type=""
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /src/images/ice-M1-min.png 1x,
+          /src/images/ice-M2-min.png 2x,
+          /src/images/ice-M3-min.png 3x
+        "
+        type=""
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          /src/images/ice-M1-min.png 1x,
+          /src/images/ice-M2-min.png 2x,
+          /src/images/ice-M3-min.png 3x
+        "
+        type=""
+      />
+      <img
+        class="hero__ice-cream"
+        src="/src/images/ice-M1-min.png"
+        alt="ice cream"
+        width="236"
+        height="557"
+      />
+    </picture>
+    <span class="hero__round"></span>
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          /src/images/woman-T1-min.png 1x,
+          /src/images/woman-T2-min.png 2x,
+          /src/images/woman-T3-min.png 3x
+        "
+        type=""
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /src/images/woman-T1-min.png 1x,
+          /src/images/woman-T2-min.png 2x,
+          /src/images/woman-T3-min.png 3x
+        "
+        type="image/jpg"
+      />
+      <img
+        class="hero__girl"
+        src="/src/images/woman-T1-min.png"
+        alt="iceacream woman"
+        width="293"
+        height="232"
+      />
+    </picture>
+  </div>
+</section>
+
