@@ -1,5 +1,9 @@
  .customer {
     padding: 120px 0 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .container {
         max-width: 970px;
     }
