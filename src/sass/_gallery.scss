@@ -5,36 +5,36 @@
                 justify-content: center;
         
                 background-image: linear-gradient(#fff5f6 20%,#fff 20%);
+
                 }
                 .container-images {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 gap: 3px;
-    
+
                 max-width: 320px;
             
                 &__second {
                     display: flex;
                     flex-direction: column;
-                    gap: 15px;
+                    gap: 3px;
                 }
             
                 &__third {
                     display: flex;
                     flex-direction: column;
-                    gap: 15px;
+                    gap: 3px;
                 }
                 &__fourth {
                     display: flex;
                     flex-direction: column;
-                    gap: 15px;
+                    gap: 3px;
                 }
                 &__fifth {
                     display: flex;
                     flex-direction: column;
-                    padding-bottom: 60px;
-                    gap: 15px;
+                    gap: 3px;
                 }
                 &__image {
                     transition: transform 0.3s ease;
