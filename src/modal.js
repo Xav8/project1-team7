@@ -7,7 +7,7 @@
 
   console.log(refs.openModalBtn);
 
-  refs.openModalBtn.forEach(function (btn) {
+  Array.from(refs.openModalBtn).forEach(function (btn) {
     btn.addEventListener("click", toggleModal);
   });
   refs.closeModalBtn.addEventListener("click", toggleModal);
